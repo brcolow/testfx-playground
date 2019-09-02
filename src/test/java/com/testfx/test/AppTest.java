@@ -24,7 +24,7 @@ public class AppTest {
 
     public static class FullScreenApp extends Application {
         @Override
-        public void start(Stage stage) throws Exception {
+        public void start(Stage stage) {
             Label label = new Label("content");
             stage.setScene(new Scene(new StackPane(label), 100, 100));
             stage.setFullScreen(true);
