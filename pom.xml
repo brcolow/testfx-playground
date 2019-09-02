@@ -12,13 +12,6 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
-    
     <build>
         <plugins>
             <plugin>
@@ -45,7 +38,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.0</version>
+                <version>3.0.0-M3</version>
                 <configuration>
                     <argLine>
                         --illegal-access=permit
@@ -67,15 +60,15 @@
             <version>12.0.2</version>
         </dependency>
         <dependency>
-            <groupId>com.github.testfx</groupId>
-            <artifactId>testfx</artifactId>
-            <version>master-SNAPSHOT</version>
+            <groupId>org.testfx</groupId>
+            <artifactId>testfx-core</artifactId>
+            <version>4.0.17-alpha-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
 		<dependency>
             <groupId>org.testfx</groupId>
             <artifactId>testfx-junit</artifactId>
-            <version>master-SNAPSHOT</version>
+            <version>4.0.17-alpha-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
         <dependency>
